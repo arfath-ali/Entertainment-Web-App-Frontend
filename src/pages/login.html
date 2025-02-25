@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../media/brand assets/logo.svg" />
+    <link rel="stylesheet" href="../../dist/styles.css" />
+    <script defer src="../javaScript/main.js"></script>
+
+    <title>Entertainment web app</title>
+  </head>
+
+  <body
+    class="bg-darkBlue font-outfit text-15 tablet:pt-20 tablet:pb-[29.563rem] desktop:pt-[4.901rem] desktop:pb-[15.625rem] pt-12 pb-[10.625rem] leading-19 font-light">
+    <header class="mb-[3.65rem]">
+      <img
+        src="../../media/brand assets/logo.svg"
+        class="mx-auto h-[25.6px] w-[32px]" />
+    </header>
+
+    <main
+      class="bg-semiDarkBlue mobile-L:mx-auto tablet:max-w-[25rem] tablet:p-8 mx-6 flex max-w-[20.438rem] flex-col items-stretch gap-10 rounded-[10px] px-6 pt-6 pb-8 text-white">
+      <h1 class="text-32 tracking-x2 leading-40">Login</h1>
+
+      <section>
+        <div class="mb-6">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="caret-red mb-[1.063rem] w-full pl-4 outline-none hover:cursor-pointer placeholder:text-15" />
+          <div class="bg-grayishBlue h-[1px]"></div>
+        </div>
+
+        <div>
+          <input
+            type="password"
+            placeholder="Password"
+            class="caret-red mb-[1.063rem] w-full pl-4 outline-none hover:cursor-pointer placeholder:text-15" />
+          <div class="bg-grayishBlue h-[1px]"></div>
+        </div>
+      </section>
+
+      <section>
+        <a href="./home.html">
+          <button
+            class="bg-red hover:text-semiDarkBlue mb-6 w-full rounded-[6px] pt-[0.875rem] pb-[0.938rem] hover:cursor-pointer hover:bg-white">
+            Login to your account
+          </button>
+        </a>
+
+        <div class="text-center">
+          <p class="mobile-M:inline mobile-S:block mr-[0.563rem]">
+            Don't have an account?
+          </p>
+          <a class="text-red hover:cursor-pointer" href="./sign-up.html"
+            >Sign Up</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="hidden"></footer>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../media/brand assets/logo.svg" />
+    <link rel="stylesheet" href="../../../../dist/styles.css" />
+    <script defer src="../javaScript/main.js"></script>
+
+    <title>Entertainment web app</title>
+  </head>
+
+  <body
+    class="bg-darkBlue font-outfit tablet:px-6 tablet:pt-[calc(6.5rem+36px)] desktop:pl-[calc(8.5rem+36px)] desktop:pr-8 desktop:pt-8 tablet:pb-14 desktop:flex-row flex flex-col pt-[calc(3.5rem+24px)] pb-[3.813rem] font-thin text-white">
+    <header>
+      <div
+        class="navbar tablet:top-6 desktop:px-0 desktop:left-8 desktop:w-auto desktop:top-8 tablet:px-6 fixed top-0 left-0 w-full"></div>
+    </header>
+
+    <main class="tablet:mx-0 desktop:w-full mx-4">
+      <section class="desktop:mt-7 flex items-center gap-4">
+        <img
+          src="../../media/icons/icon-search.svg"
+          class="tablet:w-8 tablet:h-8 h-6 w-6 hover:cursor-pointer" />
+        <input
+          type="search"
+          placeholder="Search for bookmarked shows"
+          class="caret-red text-16 placeholder:text-16 tablet:text-24 tablet:leading-30 tablet:placeholder:text-24 tablet:placeholder:leading-30 w-full leading-20 outline-none hover:cursor-pointer" />
+      </section>
+
+      <section class="tablet:mb-10 tablet:mt-8 mt-6 mb-6">
+        <h2
+          class="tracking-x1 text-20 tablet:text-32 tablet:leading-40 tablet:tracking-x2 tablet:mb-6 mb-4 leading-25">
+          Bookmarked Movies
+        </h2>
+        <div class="bookmarked-movies"></div>
+      </section>
+
+      <section>
+        <h2
+          class="tracking-x1 text-20 tablet:text-32 tablet:leading-40 tablet:tracking-x2 tablet:mb-6 mb-4 leading-25">
+          Bookmarked TV Series
+        </h2>
+        <div class="bookmarked-tv-series"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
