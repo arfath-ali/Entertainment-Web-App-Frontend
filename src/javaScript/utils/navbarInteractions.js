@@ -7,11 +7,13 @@ export function loadNavbarInteractions() {
 
   resetIconState(navbarIcons);
 
-  navbarIcons.forEach((icon) => {
-    if (currentPage.dataset.icon === icon.dataset.icon) {
-      icon.src = `../../media/icons/icons-navbar/${icon.dataset.iconActiveState}.svg`;
-    }
-  });
+  const activeIcon = [...navbarIcons].find(
+    (icon) => currentPage.dataset.icon === icon.dataset.icon,
+  );
+
+  if (activeIcon) {
+    activeIcon.src = `../../media/icons/icons-navbar/${activeIcon.dataset.iconActiveState}.svg`;
+  }
 }
 
 function resetIconState(navbarIcons) {
