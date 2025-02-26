@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-export function loadNavbar() {
+export default function loadNavbar() {
   const navbarHTML = `<nav
   class="bg-semiDarkBlue tablet:py-6 tablet:pl-6 tablet:pr-4 desktop:p-8 tablet:rounded-[20px] desktop:mb-8 desktop:flex-col flex items-center justify-between px-4 py-[1.125rem]">
   <img

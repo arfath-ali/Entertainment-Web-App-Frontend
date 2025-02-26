@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-export function loadNavbarInteractions() {
+export default function loadNavbarInteractions() {
   const currentPage = document.querySelector(`.${document.body.dataset.page}`);
   const navbarIcons = document.querySelectorAll('.navbar-icons');
 
