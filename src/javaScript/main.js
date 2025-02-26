@@ -1,9 +1,8 @@
 /* eslint-disable no-undef */
 import { loadNavbar } from './utils/navbar.js';
+import { loadNavbarInteractions } from './utils/navbarInteractions.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const navbarContainer = document.querySelector('.navbar');
-  if (navbarContainer) {
-    navbarContainer.innerHTML = loadNavbar();
-  }
+  loadNavbar();
+  loadNavbarInteractions();
 });
