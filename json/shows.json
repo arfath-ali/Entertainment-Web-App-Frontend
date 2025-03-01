@@ -1,58 +1,211 @@
 {
   "trending": [
-    "Interstellar",
-    "Fight Club",
-    "Mufasa: The Lion King",
-    "Breaking Bad",
-    "Deadpool & Wolverine",
-    "The Dark Knight",
-    "The Boys",
-    "Inception",
-    "Dune: Part Two",
-    "Stranger Things",
-    "The Godfather",
-    "Top Gun: Maverick",
-    "House of the Dragon"
+    {
+      "title": "Interstellar",
+      "type": "movie"
+    },
+    {
+      "title": "Fight Club",
+      "type": "movie"
+    },
+    {
+      "title": "Mufasa: The Lion King",
+      "type": "movie"
+    },
+    {
+      "title": "Breaking Bad",
+      "type": "webseries"
+    },
+    {
+      "title": "Deadpool & Wolverine",
+      "type": "movie"
+    },
+    {
+      "title": "The Dark Knight",
+      "type": "movie"
+    },
+    {
+      "title": "The Boys",
+      "type": "webseries"
+    },
+    {
+      "title": "Inception",
+      "type": "movie"
+    },
+    {
+      "title": "Dune: Part Two",
+      "type": "movie"
+    },
+    {
+      "title": "Stranger Things",
+      "type": "webseries"
+    },
+    {
+      "title": "The Godfather",
+      "type": "movie"
+    },
+    {
+      "title": "Top Gun: Maverick",
+      "type": "movie"
+    },
+    {
+      "title": "House of the Dragon",
+      "type": "webseries"
+    }
   ],
 
   "recommended": [
-    "Game of Thrones",
-    "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "Shutter Island",
-    "Zindagi Na Milegi Dobara",
-    "Peaky Blinders",
-    "Oppenheimer",
-    "Arrival",
-    "Daredevil",
-    "Spider-Man: No Way Home",
-    "se7en",
-    "The Walking Dead",
-    "John Wick: Chapter 4",
-    "Avengers: Endgame",
-    "The Family Man",
-    "Jurassic Park",
-    "The Lord of the Rings: The Return of the King",
-    "Chernobyl",
-    "The Shawshank Redemption",
-    "The Lion King",
-    "House of Cards",
-    "RRR",
-    "Taxi Driver",
-    "Succession",
-    "Avatar",
-    "Scarface",
-    "Money Heist",
-    "The Wolf of the Wall Street",
-    "Jai Bhim",
-    "Silicon Valley",
-    "La La Land",
-    "Joker",
-    "Dark",
-    "Ford v Ferrari",
-    "Django Unchained",
-    "Mind Hunter",
-    "The Matrix",
-    "Baahubali 2: The Conclusion",
-    "Thor: Ragnarok"
+    {
+      "title": "Game of Thrones",
+      "type": "webseries"
+    },
+    {
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "type": "movie"
+    },
+    {
+      "title": "Shutter Island",
+      "type": "movie"
+    },
+    {
+      "title": "Zindagi Na Milegi Dobara",
+      "type": "movie"
+    },
+    {
+      "title": "Peaky Blinders",
+      "type": "webseries"
+    },
+    {
+      "title": "Oppenheimer",
+      "type": "movie"
+    },
+    {
+      "title": "Arrival",
+      "type": "movie"
+    },
+    {
+      "title": "Daredevil",
+      "type": "webseries"
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "type": "movie"
+    },
+    {
+      "title": "se7en",
+      "type": "movie"
+    },
+    {
+      "title": "The Walking Dead",
+      "type": "webseries"
+    },
+    {
+      "title": "John Wick: Chapter 4",
+      "type": "movie"
+    },
+    {
+      "title": "Avengers: Endgame",
+      "type": "movie"
+    },
+    {
+      "title": "The Family Man",
+      "type": "webseries"
+    },
+    {
+      "title": "Jurassic Park",
+      "type": "movie"
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "type": "movie"
+    },
+    {
+      "title": "Chernobyl",
+      "type": "webseries"
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "type": "movie"
+    },
+    {
+      "title": "The Lion King",
+      "type": "movie"
+    },
+    {
+      "title": "House of Cards",
+      "type": "webseries"
+    },
+    {
+      "title": "RRR",
+      "type": "movie"
+    },
+    {
+      "title": "Taxi Driver",
+      "type": "movie"
+    },
+    {
+      "title": "Succession",
+      "type": "webseries"
+    },
+    {
+      "title": "Avatar",
+      "type": "movie"
+    },
+    {
+      "title": "Scarface",
+      "type": "movie"
+    },
+    {
+      "title": "Money Heist",
+      "type": "webseries"
+    },
+    {
+      "title": "The Wolf of Wall Street",
+      "type": "movie"
+    },
+    {
+      "title": "Jai Bhim",
+      "type": "movie"
+    },
+    {
+      "title": "Silicon Valley",
+      "type": "webseries"
+    },
+    {
+      "title": "La La Land",
+      "type": "movie"
+    },
+    {
+      "title": "Joker",
+      "type": "movie"
+    },
+    {
+      "title": "Dark",
+      "type": "webseries"
+    },
+    {
+      "title": "Ford v Ferrari",
+      "type": "movie"
+    },
+    {
+      "title": "Django Unchained",
+      "type": "movie"
+    },
+    {
+      "title": "Mind Hunter",
+      "type": "webseries"
+    },
+    {
+      "title": "The Matrix",
+      "type": "movie"
+    },
+    {
+      "title": "Baahubali 2: The Conclusion",
+      "type": "movie"
+    },
+    {
+      "title": "Thor: Ragnarok",
+      "type": "movie"
+    }
   ]
 }
