@@ -11,6 +11,7 @@ export default async function fetchShow(showTitle, showType) {
     const movieAPI = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(showTitle)}`;
     const tvAPI = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${encodeURIComponent(showTitle)}`;
 
+
     let response;
     let data;
     let foundShow;

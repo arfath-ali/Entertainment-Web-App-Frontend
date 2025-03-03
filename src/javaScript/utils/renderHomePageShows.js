@@ -5,7 +5,7 @@ export default async function renderHomePageShows() {
   const trendingShowsList = await trendingShowsInfo();
   const trendingShowsData = await fetchTrendingShowsData(trendingShowsList);
 
-  return { trendingShowsData };
+  return trendingShowsData;
 }
 
 async function fetchTrendingShowsData(trendingShowsList) {
@@ -21,4 +21,5 @@ async function fetchTrendingShowsData(trendingShowsList) {
   trendingShowsData.forEach((show) => {
     console.log(show.movie?.title || show.tvShow?.name || 'NO SHOW FOUND!!!');
   });
+  return trendingShowsData;
 }
