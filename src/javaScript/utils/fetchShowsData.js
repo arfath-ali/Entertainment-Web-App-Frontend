@@ -11,7 +11,6 @@ export default async function fetchShowsData(showTitle, showType) {
     const movieAPI = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(showTitle)}`;
     const tvAPI = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${encodeURIComponent(showTitle)}`;
 
-
     let response;
     let data;
     let foundShow;
@@ -37,7 +36,7 @@ export default async function fetchShowsData(showTitle, showType) {
       response = await fetch(tvAPI);
       if (!response.ok)
         throw new Error(`HTTP error! Status:${response.status}`);
-      
+
       data = await response.json();
       foundShow =
         data.results[0].name.toLowerCase() === showTitle.toLowerCase()
