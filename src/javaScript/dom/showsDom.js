@@ -1,6 +1,4 @@
 /* eslint-disable no-undef */
-import { domElements } from './domElements.js';
-
 export default function showsDom() {
   const show = document.createElement('div');
   const poster = document.createElement('img');
@@ -26,11 +24,5 @@ export default function showsDom() {
   show.appendChild(poster);
   show.appendChild(title);
 
-  if (show.classList.contains('trending-show')) {
-    domElements.trendingShowsContainer.appendChild(show);
-  } else if (show.classList.contains('recommended-show')) {
-    domElements.recommendedShowsContainer.appendChild(show);
-  }
-
-  return { poster, title };
+  return { show, poster, title };
 }

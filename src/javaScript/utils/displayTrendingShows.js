@@ -1,7 +1,8 @@
 import trendingShowsData from './processTrendingShowsData.js';
 import showsDom from '../dom/showsDom.js';
+import { domElements } from '../dom/domElements.js';
 
-export default async function displayHomePageShows() {
+export default async function displayTrendingShows() {
   const trendingShows = await trendingShowsData();
 
   for (const trendingShow of trendingShows) {
@@ -10,8 +11,10 @@ export default async function displayHomePageShows() {
 
     const { show, poster, title } = showsDom();
 
-    show.classlist.add('trending-show');
+    show.classList.add('trending-show');
     poster.src = posterURL;
     title.textContent = trendingShow.title || trendingShow.name;
+
+    domElements.trendingShowsContainer.appendChild(show);
   }
 }
