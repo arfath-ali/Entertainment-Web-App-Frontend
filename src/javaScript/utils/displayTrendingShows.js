@@ -4,13 +4,14 @@ import showsDom from '../dom/showsDom.js';
 export default async function displayHomePageShows() {
   const trendingShows = await trendingShowsData();
 
-  for (const show of trendingShows) {
-    const posterPath = show.movie?.poster_path || show.tvShow?.poster_path;
+  for (const trendingShow of trendingShows) {
+    const posterPath = trendingShow.poster_path;
     const posterURL = `https://image.tmdb.org/t/p/original/${posterPath}`;
 
-    const { poster, title } = showsDom();
+    const { show, poster, title } = showsDom();
 
+    show.classlist.add('trending-show');
     poster.src = posterURL;
-    title.textContent = show.movie?.title || show.tvShow?.name;
+    title.textContent = trendingShow.title || trendingShow.name;
   }
 }
