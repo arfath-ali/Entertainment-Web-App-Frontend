@@ -14,6 +14,7 @@ export default function showsDom() {
     'desktop:min-w-[200px]',
     'desktop:min-h-[300px]',
     'overflow-scroll',
+    'rounded-[12px]',
   );
   title.classList.add(
     'text-15',
@@ -24,7 +25,12 @@ export default function showsDom() {
   );
   show.appendChild(poster);
   show.appendChild(title);
-  domElements.trendingShowsContainer.appendChild(show);
+
+  if (show.classList.contains('trending-show')) {
+    domElements.trendingShowsContainer.appendChild(show);
+  } else if (show.classList.contains('recommended-show')) {
+    domElements.recommendedShowsContainer.appendChild(show);
+  }
 
   return { poster, title };
 }
