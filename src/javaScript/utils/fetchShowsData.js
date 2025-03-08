@@ -10,6 +10,6 @@ export default async function fetchShowsData(showTitle, showType) {
     return data.results[0];
   } catch (error) {
     console.log(error);
-    return null;
+    return [];
   }
 }

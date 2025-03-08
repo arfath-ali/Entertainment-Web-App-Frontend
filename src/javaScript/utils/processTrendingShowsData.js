@@ -17,8 +17,6 @@ async function retrieveTrendingShowsDetails(trendingShowsEntries) {
     ),
   );
 
-  console.log(trendingShowsDetails);
-
   trendingShowsDetails.forEach((show) => {
     console.log(show.title || show.name || 'NO SHOW FOUND!!!');
   });
